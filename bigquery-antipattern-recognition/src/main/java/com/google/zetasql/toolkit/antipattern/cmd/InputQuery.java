@@ -21,24 +21,24 @@ public class InputQuery {
   private String query;
   private String queryIdentifier;
   private String projectId;
-  private float slotHours;
+  private float totalSlotMs;
 
   public InputQuery(String query, String queryIdentifier) {
     this.query = query;
     this.queryIdentifier = queryIdentifier;
   }
 
-  public InputQuery(String query, String jobId, float slotHours) {
+  public InputQuery(String query, String jobId, float totalSlotMs) {
     this.query = query;
     this.queryIdentifier = jobId;
-    this.slotHours = slotHours;
+    this.totalSlotMs = totalSlotMs;
   }
 
-  public InputQuery(String query, String jobId, String projectId, float slotHours) {
+  public InputQuery(String query, String jobId, String projectId, float totalSlotMs) {
     this.projectId = projectId;
     this.query = query;
     this.queryIdentifier = jobId;
-    this.slotHours = slotHours;;
+    this.totalSlotMs = totalSlotMs;;
   }
 
   public String getProjectId() {
@@ -53,7 +53,7 @@ public class InputQuery {
     return queryIdentifier;
   }
 
-  public float getSlotHours() {
-    return slotHours;
+  public float getTotalSlotMs() {
+    return totalSlotMs;
   }
 }

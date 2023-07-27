@@ -98,7 +98,7 @@ public class Main {
       Map<String, Object> rowContent = new HashMap<>();
       rowContent.put("job_id", inputQuery.getQueryId());
       rowContent.put("query", query);
-      rowContent.put("slot_hours", inputQuery.getSlotHours());
+      rowContent.put("total_slot_ms", inputQuery.getTotalSlotMs());
       rowContent.put("recommendation", recommendations);
       rowContent.put("process_timestamp", new DateTime(new Date()));
 
