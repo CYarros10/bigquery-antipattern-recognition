@@ -121,7 +121,7 @@ public class Main {
       InputQuery inputQuery,
       List<Map<String, String>> rec) {
       if (cmdParser.isReadingFromInfoSchema()) {
-        OutputResult result = new OutputResult(inputQuery.getQueryId(),inputQuery.getQuery(),inputQuery.getSlotHours(),rec);
+        OutputResult result = new OutputResult(inputQuery.getQueryId(),inputQuery.getQuery(),inputQuery.getTotalSlotMs(),rec);
         outputData.add(result);
       }
       else {
